@@ -1,0 +1,195 @@
+@charset "UTF-8";
+
+:root{
+    --cor1:#F2F2F2;
+    --cor2:#21A2BF;
+    --cor3:#23395B;
+    --cor4:#c7dcff;
+}
+
+/*TABLET*/
+@media screen and (min-width:768px) and (max-width:992px) {
+    nav{
+        width: 40%;
+        margin-left: 60%
+    }
+
+    nav>ul{
+        list-style: none;
+    }
+
+    header>ul#menu-minwidth-992px{
+        display: none;
+    }
+
+    section{
+        display: flex;
+        flex-flow: row nowrap;
+    }
+
+    section>div#imagem{
+        height: 100%;
+        width: 50%;
+        background-position: 25%;
+    }
+
+    section>div#loginResultado{
+        width: 50%;
+    }
+
+    section>div#loginResultado>h1{
+        font-size: 35px;
+    }
+
+    section>div#loginResultado>form>div.input-formulario>label{
+        font-size: 30px;
+    }
+
+    section>div#loginResultado>form>div.input-formulario>span{
+        font-size: 35px;
+        vertical-align: text-bottom;
+    }
+
+    section>div#loginResultado>form>div#input-enviar>input{
+        font-size: 28px;
+        height: 110%;
+    }
+
+    section>div#loginResultado>form>div#input-enviar>p{
+        font: 18px;
+    }
+    
+
+    section>div#loginResultado>div#ajuda-oculto{
+        background-color: var(--cor4);
+        padding: 20px;
+        display: none;
+    }
+
+    section>div#loginResultado>div#ajuda-oculto>h2{
+        color: var(--cor3);
+        font-size: 22px;
+    }
+    section>div#loginResultado>div#ajuda-oculto>p{
+        font-size: 20px;
+    }
+
+    footer{
+        height: 40px;
+    }
+
+}
+
+@media screen and (min-width:992px) {
+    nav{
+        width: 30%;
+    }
+
+    nav>ul{
+        list-style: none;
+    }
+
+    header>span.material-symbols-outlined{
+        display: none;
+    }
+
+    header>ul#menu-minwidth-992px{
+        padding-top: 9px;
+        display: inline-block;
+        float: right;
+        list-style: none;
+    }
+
+    header>ul#menu-minwidth-992px>li{
+        display: inline-block;
+        text-decoration: none;
+    }
+
+    header>ul#menu-minwidth-992px>li>a{
+        text-decoration: none;
+        font-size: 16px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: var(--cor3);
+        margin: 0px 10px;
+    }
+
+    header>ul#menu-minwidth-992px>li>a:hover{
+        color: var(--cor2);   
+    }
+
+    section{
+        max-width: 1000px;
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content:space-between;
+    }
+
+    section>div#imagem{
+        order: 1;
+        height: 100%;
+        width: 30%;
+        background-position: 40%;
+        flex-shrink: 0;
+    }
+
+    section>div#loginResultado{
+        flex-shrink: 0;
+        width: 30%;
+        align-self: center;
+    }
+
+    section>div#loginResultado>p{
+        display: none;
+    }
+
+    section>div#ajuda-desktop{
+        display: block;
+        box-sizing: border-box;
+        padding: 25px 25px 0px 0px;
+    }
+
+    section>div#ajuda-desktop>p{
+        text-align: center;
+        border: 2px solid #21A2BF;
+        padding: 3px;
+        margin-bottom: 10px;
+    }
+
+    section>div#ajuda-desktop>p>a{
+        text-decoration: none;
+        color: var(--cor2);
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 18px;
+        pointer-events: none;
+    }
+
+    section>div#ajuda-desktop>p>span{
+        vertical-align: text-bottom;
+        padding-right: 5px;
+    }
+
+    section>div#ajuda-desktop>div#ajuda-desktop-texto{
+        text-align: justify;
+    }
+
+    section>div#ajuda-desktop>div#ajuda-desktop-texto>h2{
+        color: var(--cor3);
+        font-size: 20px;
+    }
+
+    section>div#ajuda-desktop>div#ajuda-desktop-texto>p{
+        text-indent: 50px;
+        padding-bottom: 10px;
+    } 
+    
+    footer{
+        height: 40px;
+    }
+
+    footer>p{
+        font-size: 18px;
+    }
+
+}

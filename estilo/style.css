@@ -1,0 +1,226 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Nunito',sans-serif;
+}
+
+:root{
+    --cor1:#F2F2F2;
+    --cor2:#21A2BF;
+    --cor3:#23395B;
+    --cor4:#c7dcff;
+}
+
+body{
+    background-color: var(--cor4);
+}
+
+main{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+header{
+    background-color: white;
+    box-sizing: border-box;
+    width: 100%;
+    height: 50px;
+    padding: 5px 10px;
+}
+
+header>a>img{
+    height: 40px;
+    float: left;
+}
+
+header>span.material-symbols-outlined{
+    color: var(--cor2);
+    float: right;
+    font-size: 40px;
+    font-weight: normal;
+    cursor: pointer;
+}
+
+nav{
+    background-color: var(--cor2);
+    display: none;
+    position: absolute;
+    width: 100%;
+
+}
+
+nav>ul{
+    text-align: center;
+    font-size: 30px;
+}
+nav>ul>li{
+    padding: 5px;
+    border: 1px solid white;
+}
+
+nav>ul>li>a{
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+header>ul#menu-minwidth-992px{
+    display: none;
+}
+
+section{
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    margin: auto;
+    width: 80%;
+    box-shadow: 0px 0px 10px #1524394c;
+
+}
+
+section>div#imagem{
+    background-image: url(../imagens/laboratorio_pequeno.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 110px;
+}
+
+section>div#loginResultado{
+    margin: 20px;
+}
+
+section>div#loginResultado>h1{
+    text-align: center;
+    color: var(--cor3);
+}
+
+section>div#loginResultado>form>div.input-formulario{
+    margin: 20px 0px;
+    font-size: 20px;
+}
+
+section>div#loginResultado>form>div.input-formulario>input{
+    display: block;
+    width: 100%;
+    height: 30px;
+    font-size: 18px;
+    background-color: var(--cor1);
+    border: 1px solid #21A2BF;
+}
+
+section>div#loginResultado>form>div.input-formulario>span{
+    color: var(--cor2);
+    font-size: 26px;
+}
+
+section>div#loginResultado>form>div.input-formulario>label{
+    vertical-align: top;
+}
+
+section>div#loginResultado>form>div#input-enviar>input{
+    border: none;
+    background-color: var(--cor2);
+    border: 5px;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+}
+
+section>div#loginResultado>form>div#input-enviar>p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+section>div#loginResultado>form>div#input-enviar>p>a{
+    font-size: 18;
+    font-weight: bold;
+    color: #23395B;
+    text-decoration: none;
+}
+
+section>div#loginResultado>p{
+    text-align: center;
+    border: 2px solid #21A2BF;
+    padding: 3px;
+    text-decoration: none;
+    color: var(--cor2);
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+section>div#loginResultado>p>span{
+    vertical-align: text-bottom;
+    padding-right: 5px;
+}
+
+section>div#loginResultado>div#ajuda-oculto{
+    display: none;
+}
+
+section>div#ajuda-desktop{
+    display: none;
+}
+
+section>dialog{
+    box-sizing: border-box;
+    padding: 20px;
+    border: none;
+    border-radius: 5px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.242);
+    width: 80%;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+ 
+}
+
+section>dialog::backdrop{
+    background-color: rgba(0, 0, 0, 0.492);
+}
+
+section>dialog>div#botaoFechar{
+    text-align: right;
+}
+
+section>dialog>div#botaoFechar>span{
+    color: var(--cor2);
+    align-self: flex-end;
+    
+}
+
+section>dialog>h2{
+    color: var(--cor3);
+}
+
+section>dialog>p{
+    font-size: 20px;
+    margin-bottom: 5px;
+}
+
+footer{
+    background-color: var(--cor3);
+    width: 100%;
+    height: 60px;
+    box-sizing: border-box;
+    padding: 10px;
+}
+
+footer>p{
+    font-size: 16px;
+    color: white;
+    text-align: center;
+    text-wrap: balance;
+}
+
+
